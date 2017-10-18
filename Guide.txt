@@ -1,0 +1,15 @@
+Ma³y guidzik po projekcie -
+
+
+src/vodafon/storefront/pages - kazda klasa-osobna strona w order processie
+src/vodafon/storefront/utils - przydatne pierdy, które w innych miejscach zrobi³yby za du¿y burdel - pokroju navigation helper (nawigacja po listwach obecnych na kazdej stronie storefronta), methodhelper(ukryte metody typu checkifelementispresent, których uzywa sie na roznych stronach)
+src/vodafon/storefront/utils/testdata - obiekty z danymi (np. dane usera)
+
+src/vodafon/test/java/vodafon/storefront - scenariusze testowe
+src/vodafon/test/resources - XML
+
+PageObject i TestPattern to klasy nadrzêdne, po której dziedzicz¹ odpowiednio: klasy stron, klasy scenariuszów.
+
+
+
+Drivery s¹ w tym folderze co XML, powinno zaci¹gaæ z bitbucketa.

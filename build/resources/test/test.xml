@@ -1,0 +1,34 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Local:37.StoreFront - Automaty" verbose="1">
+    <test name="SubmitOrder" preserve-order="true">
+        <parameter name="browserID"  value="2"/>
+        <!--1-FF,2-Chrome-->
+        <parameter name="username"  value="testergg"/>
+        <!--Storefront - customer1,testergg-->
+        <!--Backoffice - DDTRepUser,DDTTLUser itd-->
+        <parameter name="server"  value="local"/>
+        <!--10,6,14,local-->
+        <parameter name="mobile"  value="iPhone 6"/>
+        <parameter name="TariffName"  value="Red Basic EU+ X 2év e-Pack"/>
+        <!--Postpaid - Go EU E 2év You
+                        Go Medium EU D 2év You
+                        Go+ EU B 2év You
+                        Red Basic EU+ X 2év You
+                        Red Medium EU+ XM 2év You
+                        Red Extra EU+ XM 2év You-->
+
+        <!--Prepaid -   Vodafone Net+
+     *                  Vodafone Tuti
+     *                  Vodafone Max L
+     *                  Vodafone Max M      -->
+
+
+        <classes>
+            <class name="Vodafon.Storefront.CreatePostpaidOrder">
+                <methods>
+                    <include name="CreatePostpaidOrder" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
